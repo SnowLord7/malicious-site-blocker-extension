@@ -1,0 +1,28 @@
+{
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "background": {
+        "persistent": true,
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "description": "Block malicious URLs from tracking you.",
+    "icons": {
+        "64": "icon.png"
+    },
+    "manifest_version": 2,
+    "name": "SnowLord's Request Blocker",
+    "version": "0.1",
+    "permissions": [
+        "webRequestBlocking",
+        "webRequest",
+        "background",
+        "<all_urls>",
+        "tabs"
+    ],
+    "short_name": "Request Block",
+    "web_accessible_resources": [
+        "index.html",
+        "script.js"
+    ]
+}
